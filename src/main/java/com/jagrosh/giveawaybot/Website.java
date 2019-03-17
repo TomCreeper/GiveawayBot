@@ -15,11 +15,11 @@
  */
 package com.jagrosh.giveawaybot;
 
-/*import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;*/
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
  *
@@ -30,10 +30,10 @@ public class Website
 {
     public static void main(String[] args)
     {
-        //SpringApplication.run(Website.class, args);
+        SpringApplication.run(Website.class, args);
     }
     
-    /*@EnableWebMvc
+    @EnableWebMvc
     public class MvcConfig extends WebMvcConfigurerAdapter {
         @Override
         public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -41,5 +41,5 @@ public class Website
             registry.addResourceHandler("/js/**","/css/**")
                     .addResourceLocations("/js/","/css/");
         }
-    }//*/
+    }
 }
