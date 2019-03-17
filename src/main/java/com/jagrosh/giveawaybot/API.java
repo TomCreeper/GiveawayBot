@@ -32,14 +32,14 @@ import org.json.JSONObject;
  */
 public class API {
     
-    //private static SimpleLog LOG = SimpleLog.getLog("API");
+    private static SimpleLog LOG = SimpleLog.getLog("API");
     
     /**
      * Starts the REST API
      * @param token
      * @param bot
      */
-    /*public static void main(String token, Bot bot)
+    public static void main(String token, Bot bot)
     {
         Spark.port(8182);
         
@@ -292,5 +292,5 @@ public class API {
         res.status(400);
         res.body(new JSONObject().put("message", message).toString());
         return res.body();
-    }//*/
+    }
 }
