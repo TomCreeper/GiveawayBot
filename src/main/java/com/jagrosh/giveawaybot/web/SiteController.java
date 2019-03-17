@@ -15,22 +15,22 @@
  */
 package com.jagrosh.giveawaybot.web;
 
-/*import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;*/
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  *
  * @author John Grosh (john.a.grosh@gmail.com)
  */
-//@Controller
+@Controller
 public class SiteController
 {
-    //@RequestMapping("/hello")
-    /*public String hello(@RequestParam(value="name", required=false, defaultValue="John") String name, Model model)
+    @RequestMapping("/hello")
+    public String hello(@RequestParam(value="name", required=false, defaultValue="John") String name, Model model)
     {
         model.addAttribute("name", name);
         return "hello";
-    }*/
+    }
 }
