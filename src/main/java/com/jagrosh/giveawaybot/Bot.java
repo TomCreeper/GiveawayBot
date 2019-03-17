@@ -95,7 +95,7 @@ public class Bot extends ListenerAdapter
         return database;
     }
     
-    /*public List<Guild> getManagedGuildsForUser(long userId)
+    public List<Guild> getManagedGuildsForUser(long userId)
     {
         List<Guild> guilds = new LinkedList<>();
         for(JDA shard: shards.getShards())
@@ -108,7 +108,7 @@ public class Bot extends ListenerAdapter
             }
         }
         return guilds;
-    }//*/
+    }
     
     // public methods
     public void shutdown()
@@ -200,13 +200,13 @@ public class Bot extends ListenerAdapter
                 .setOwnerId("113156185389092864")
                 .setGame(Game.playing(Constants.TADA+" "+Constants.WEBSITE+" "+Constants.TADA+" Type !ghelp "+Constants.TADA))
                 .setEmojis(Constants.TADA, Constants.WARNING, Constants.ERROR)
-                //.setServerInvite("https://discordapp.com/invite/0p9LSGoRLu6Pet0k")
+                .setServerInvite("https://discordapp.com/invite/0p9LSGoRLu6Pet0k")
                 .setHelpConsumer(event -> event.replyInDm(FormatUtil.formatHelp(event), 
                         m-> event.getMessage().addReaction(Constants.REACTION).queue(s->{},f->{}), 
                         f-> event.replyWarning("Help could not be sent because you are blocking Direct Messages")))
                 .setDiscordBotsKey(config.getString("listing.discord-bots"))
                 .setCarbonitexKey(config.getString("listing.carbon"))
-                //.setDiscordBotListKey(tokens.get(6))
+                .setDiscordBotListKey(tokens.get(6))
                 .addCommands(
                         new AboutCommand(bot),
                         new InviteCommand(),
